@@ -1,0 +1,37 @@
+@import "./fonts.scss";
+@import "./default.scss";
+@import './icon-fonts.scss';
+
+
+body {
+    font-family: Source Sans Pro;
+    font-weight: 400;
+    background-color: #F0F0F7;
+}
+#root { 
+   height: 100%;
+   width: 100%;
+}
+
+.app { 
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.content { 
+    flex: 1 1 auto;
+  
+}
+.title { 
+    padding: 32px 0px;
+    h2 { 
+        font-size: 28px;
+        line-height: 40px;
+        color:#43425D;
+    }
+
+}
+
+.body { 
+    padding: 0px  95px 103px 75px;
+}
