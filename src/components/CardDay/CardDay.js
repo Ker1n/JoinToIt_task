@@ -1,12 +1,18 @@
 import React from "react";
-import "./CardDay.scss";
+import moment from "moment";
 import { useSelector } from "react-redux";
+
+import { Event } from "../Event/Event";
+
+import "./CardDay.scss";
 
 export const CardDay = (props) => {
   const { month } = useSelector((state) => state.app);
 
   return (
-    <div className="card">
+    <div
+      className={moment().isSame(props.day, "day") ? "card currentDay" : "card"}
+    >
       <div
         className="card__day"
         style={
@@ -15,7 +21,14 @@ export const CardDay = (props) => {
             : { color: "#D4D4DA" }
         }
       >
-        {props?.test}
+        {" "}
+        {props?.dayNumber}
+      </div>
+
+      <div className="card__events-wrapper">
+        {props?.eventsArray[0]?.map((el, index) => {
+          return <Event key={index + Date.now()} element={el} />;
+        })}
       </div>
     </div>
   );

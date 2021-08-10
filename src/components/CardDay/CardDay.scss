@@ -1,17 +1,29 @@
-.card { 
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: #ffffff;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  position: relative;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    background: #FFFFFF;
-    
-    &__day{ 
-        align-self: flex-end;
-        margin: 15px 19px 3px 19px ;
-        color: #43425D;
-        font-size: 15px;
-        line-height: 25px;
-    }
+  &:hover {
+    box-shadow: 2px 5px 6px #0000000a;
+    z-index: 1;
+  }
+  &__day {
+    align-self: flex-end;
+    margin: 10px 19px 3px 19px;
+    color: #43425d;
+    font-size: 15px;
+    line-height: 25px;
+  }
 
+  &__events-wrapper {
+  }
+}
+
+.currentDay {
+  background-color: #f5f6fa;
 }

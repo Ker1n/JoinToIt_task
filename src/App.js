@@ -14,9 +14,6 @@ function App() {
         <div className="content">
           <Header />
           <main className="body">
-            {/* <div className="title">
-              <h2>Calendar</h2>
-            </div> */}
             <Switch>
               <Route path="/calendar" component={Calendar}></Route>
             </Switch>

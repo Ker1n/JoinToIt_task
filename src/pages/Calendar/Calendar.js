@@ -27,11 +27,7 @@ export const Calendar = () => {
     );
   }, []);
 
-
-
-
   moment.updateLocale("eu", { week: { dow: 0 } });
-
   // const startDay = moment().startOf("month").startOf("week");
   // const endDay = moment().endOf("month").endOf("week");
 
