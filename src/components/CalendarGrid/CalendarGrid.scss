@@ -1,0 +1,11 @@
+.calendarGrid {
+    padding: 1px;
+    max-width: 1142px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 162px);
+    // grid-template-rows: repeat(5, 135px);
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+    background: #EAF0F4;
+}

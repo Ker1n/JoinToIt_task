@@ -1,5 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+
 import { LeftBar } from "./components/LeftBar/LeftBar";
 import { Header } from "./components/Header/Header";
 import { Calendar } from "./pages/Calendar/Calendar";
@@ -12,9 +14,9 @@ function App() {
         <div className="content">
           <Header />
           <main className="body">
-            <div className="title">
+            {/* <div className="title">
               <h2>Calendar</h2>
-            </div>
+            </div> */}
             <Switch>
               <Route path="/calendar" component={Calendar}></Route>
             </Switch>

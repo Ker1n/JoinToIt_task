@@ -1,0 +1,17 @@
+.card { 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: #FFFFFF;
+    
+    &__day{ 
+        align-self: flex-end;
+        margin: 15px 19px 3px 19px ;
+        color: #43425D;
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+}

@@ -1,37 +1,44 @@
 @import "./fonts.scss";
 @import "./default.scss";
-@import './icon-fonts.scss';
-
+@import "./icon-fonts.scss";
 
 body {
-    font-family: Source Sans Pro;
-    font-weight: 400;
-    background-color: #F0F0F7;
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  background-color: #f0f0f7;
 }
-#root { 
-   height: 100%;
-   width: 100%;
-}
-
-.app { 
-    height: 100%;
-    width: 100%;
-    display: flex;
-}
-.content { 
-    flex: 1 1 auto;
-  
-}
-.title { 
-    padding: 32px 0px;
-    h2 { 
-        font-size: 28px;
-        line-height: 40px;
-        color:#43425D;
-    }
-
+#root {
+  height: 100%;
+  width: 100%;
 }
 
-.body { 
-    padding: 0px  95px 103px 75px;
+.app {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
 }
+.content {
+  flex: 1 1 auto;
+  min-width: 1130px;
+}
+
+
+.body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 95px 103px 75px;  
+}
+
+
+// .title {
+//   width: 100%;
+//    max-width: 1142px;
+//    padding: 32px 0px;
+//    h2 {
+//      font-size: 28px;
+//      line-height: 40px;
+//      color: #43425d;
+//    }
+//  }
